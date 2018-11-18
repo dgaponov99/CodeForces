@@ -4,6 +4,14 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Archive/A" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Archive/B" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Archive/C" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Archive/D" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Contests/Round54" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Contests/Round519" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Contests/Round520" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Contests/Round521" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
