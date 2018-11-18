@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+//Исправлена ошибка, из-за которой решение взломали
+
 public class C_GoodArray {
 
     public static void main(String[] args) {
@@ -14,7 +16,7 @@ public class C_GoodArray {
             long a = scanner.nextLong();
             arr[i] = a;
             sum += a;
-            if (a > max1) {
+            if (a >= max1) {
                 max2 = max1;
                 max1 = a;
                 max1_p = i;

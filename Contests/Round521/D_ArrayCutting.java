@@ -2,12 +2,18 @@ import java.util.*;
 
 // Я не знаю что ему не понравилось
 
+// Теперь знаю что...
+
+// Ураааааа
+
 public class D_ArrayCutting {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int k = scanner.nextInt();
+
+
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < n; i++) {
             int a = scanner.nextInt();
@@ -18,35 +24,44 @@ public class D_ArrayCutting {
             }
         }
 
+        if (k == 1) {
+            int max = 0;
+            int maxA = 0;
+            for (int a : map.keySet()){
+                if (map.get(a) > max) {
+                    max = map.get(a);
+                    maxA = a;
+                }
+            }
+            System.out.println(maxA);
+            return;
+        }
 
 
-        StringBuilder stringBuilder = new StringBuilder();
-        int size = 0;
+        HashMap<Integer, Integer> element = new HashMap<>();
         for (int i = n/k; i > 0; i--) {
             int count = 0;
             for (int a : map.keySet()) {
                 if (map.get(a) >= i) {
-                    count += map.get(a);
+                    count += (map.get(a) / i) * i;
+                    element.put(a, map.get(a) / i);
                 }
             }
             if (count >= i*k) {
-                size = i;
                 break;
             }
+            element.clear();
         }
 
-        for (int a : map.keySet()){
-            if (map.get(a) >= size){
-                for (int i = 0; i < map.get(a) / size; i++) {
-                    stringBuilder.append(a).append(" ");
-                    if (stringBuilder.length() >= k*2){
-                        System.out.println(stringBuilder);
-                        return;
-                    }
+        int sum = 0;
+        for (int e: element.keySet()) {
+            for (int i = 0; i < element.get(e); i++) {
+                System.out.print(e + " ");
+                sum++;
+                if (sum >= k){
+                    return;
                 }
             }
         }
-
-
     }
 }
