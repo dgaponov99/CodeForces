@@ -14,6 +14,9 @@
       <sourceFolder url="file://$MODULE_DIR$/Contests/Round521" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Contests/Round523" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Contests/Round55" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Contests/Round527" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Contests/Goodbay2018" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Contests/Round541" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

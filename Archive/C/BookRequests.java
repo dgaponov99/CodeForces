@@ -48,8 +48,6 @@ public class BookRequests {
                     else
                         System.out.println(Integer.min(rightOrder - book.order, book.order + leftOrder - 1));
             }
-
-
         }
     }
 }
